@@ -1,11 +1,11 @@
 <?php
 
-// 1. 문자열을 특정 크기로 나누고 ':'로 구분하기
+// no 1
 $str1 = "033000";
 $chunked_str1 = implode(":", str_split($str1, 2));
 echo "1. Chunked string: " . $chunked_str1 . "\n";
 
-// 2. 문자열에 PHP가 있는지 확인하고, 위치를 출력하기
+// no 2
 $str2 = "I love PHP because PHP is great!";
 $position = strpos($str2, "PHP");
 if ($position !== false) {
@@ -14,17 +14,17 @@ if ($position !== false) {
     echo "2. The PHP word is not present.\n";
 }
 
-// 3. 파일 이름 추출하기
+// no 3
 $str3 = "/var/www/html/index.php";
 $file_name = basename($str3);
 echo "3. File name: " . $file_name . "\n";
 
-// 4. 문자열에서 첫 번째 'the'를 'That'으로 교체하기
+// no 4
 $str4 = "the quick brown fox jumps over the lazy dog";
 $replaced_str4 = preg_replace("/\bthe\b/", "That", $str4, 1);
 echo "4. Replaced string: " . $replaced_str4 . "\n";
 
-// 5. 두 문자열에서 첫 번째로 다른 문자 찾기
+// no 5
 $str5 = "abcdefg";
 $str6 = "abcxyfg";
 $diff_pos = -1;
@@ -40,7 +40,7 @@ if ($diff_pos !== -1) {
     echo "5. No differences found or one string is a prefix of the other.\n";
 }
 
-// 6. 문자열 암호화 (알파벳을 다음 문자로 바꾸기)
+// no 6
 $str4_encrypted = '';
 for ($i = 0; $i < strlen($str4); $i++) {
     $char = $str4[$i];
