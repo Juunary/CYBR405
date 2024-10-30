@@ -1,5 +1,12 @@
 <?php
 
+$str1 ='033000';
+$str2 = 'PHP stands for PHP: Hypertext Preprocessor, it is a widely-used, open source scripting language';
+$str3 = 'www.example.com/public_html/index.php';
+$str4 = 'the quick brown fox jumps over the lazy dog.';
+$str5 = 'football';
+$str6 = 'footboll';
+
 // no 1
 $str1 = "033000";
 $chunked_str1 = implode(":", str_split($str1, 2));
